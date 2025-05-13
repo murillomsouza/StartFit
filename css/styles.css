@@ -1,6 +1,13 @@
 * {
   margin: 0;
-  border: 0;
+  border: 0
+}
+header{
+  background-image: url("../img/carrossel.png");
+  background-size: cover;
+  background-position: center;
+  height: 400px;
+  
 }
 /*edição no body*/
 body {
@@ -29,3 +36,4 @@ body {
   color: #fff;
   padding: 0.5rem 0;
 }
+
