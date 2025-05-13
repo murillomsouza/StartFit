@@ -36,4 +36,34 @@ body {
   color: #fff;
   padding: 0.5rem 0;
 }
-
+/*edição do campo da imagem*/
+.secao1 {
+  background-image: url("../img/bg-image.png");
+  background-size: cover;
+  text-align: center;
+  height: 514px;
+}
+.secao1 h1 {
+  font-size: 48px;
+  font-weight: bold;
+  color: #fff;
+  padding-top: 160px;
+}
+.secao1 p {
+  font-size: 18px;
+  margin: 20px auto;
+  color: #fff;
+}
+.btn {
+  padding: 10px 30px;
+  font-weight: bold;
+  margin: 20px;
+  border-radius: 30px;
+  background-color: #fff;
+}
+.btn-iniciar {
+  border: 5px solid #A800E1;
+}
+.btn-saiba {
+  border: 5px solid #C50000;
+}
