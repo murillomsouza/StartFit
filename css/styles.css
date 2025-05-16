@@ -1,10 +1,11 @@
 * {
   margin: 0;
-  border: 0
+  border: 0;
 }
 /*edição no body*/
 body {
   background: #1e1e1e;
+  color: #fff;
 }
 
 /*edição na navbar*/
@@ -26,26 +27,60 @@ body {
 }
 
 .nav-link {
-  color: #fff;
   padding: 0.5rem 0;
 }
-/*edição do campo da imagem*/
+/*edição da seção 1 */
 .secao1 {
-  background-image: url("../img/bg-image.png");
+  background-image: url("../img/bg-landing.png");
   background-size: cover;
   text-align: center;
-  height: 514px;
+  height: 65dvh;
+  position: relative;
+}
+.icone-secao1 {
+  position: absolute;
+  right: 24px;
+  bottom: 24px;
+  width: 56px;
+  height: 56px;
+  z-index: 10;
 }
 .secao1 h1 {
   font-size: 48px;
   font-weight: bold;
-  color: #fff;
   padding-top: 160px;
+  word-break: break-word;
 }
 .secao1 p {
   font-size: 18px;
   margin: 20px auto;
-  color: #fff;
+}
+/*responsividade para mobile*/
+@media (max-width: 767.98px) {
+  .secao1 {
+    height: 65vh;
+    min-height: 65vh;
+    padding-top: 80px;
+    padding-bottom: 40px;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+  }
+  .secao1 h1 {
+    font-size: 2rem;
+    padding-top: 40px;
+    margin-bottom: 16px;
+  }
+  .secao1 p {
+    font-size: 1rem;
+    max-width: 95vw;
+  }
+  .icone-secao1 {
+    width: 40px;
+    height: 40px;
+    right: 12px;
+    bottom: 12px;
+  }
 }
 .btn {
   padding: 10px 30px;
@@ -55,19 +90,43 @@ body {
   background-color: #fff;
 }
 .btn-iniciar {
-  border: 5px solid #A800E1;
+  border: 5px solid #a800e1;
 }
 .btn-iniciar:hover {
-  background-color: #A800E1;
+  background-color: #a800e1;
   color: white;
 }
 
 .btn-saiba {
-  border: 5px solid #C50000;
+  border: 5px solid #c50000;
 }
 .btn-saiba:hover {
-  background-color: #C50000;
+  background-color: #c50000;
   color: white;
+}
+/*edição da seção 2 */
+.secao2 h1 {
+  padding: 30px 0px 0px 30px;
+}
+.secao2 img {
+  padding: 0px 0px 30px 25px;
+}
+/* Borda curva e gradiente para os cards */
+.avaliacao-card {
+  position: relative;
+  border-radius: 32px;
+  padding: 16px 0 24px 0;
+  max-width: 260px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.15);
+  background: #fff;
+  z-index: 1; /* Garante que o card fique acima de outros elementos se sobreposto */
+  border: 10px solid transparent;
+  background-image: linear-gradient(#fff, #fff),
+    /* Fundo branco do card */ linear-gradient(135deg, #c50000, #a800e1); /* Gradiente para a borda */
+  background-clip: padding-box, border-box; /* Fundo branco só no centro, gradiente só na borda */
+}
+.border-avatar {
+  margin-right: 20px;
 }
 
 /* Seção inicial homepage */
@@ -100,7 +159,7 @@ body {
   border-radius: 30px;
   background-color: white;
   color: black;
-  border: 4px solid #A800E1;
+  border: 4px solid #a800e1;
   text-decoration: none;
   font-size: 16px;
   transition: 0.3s ease-in-out;
@@ -108,7 +167,7 @@ body {
 
 /* Efeito hover */
 .aquecimento-btn:hover {
-  background-color: #A800E1;
+  background-color: #a800e1;
   color: white;
 }
 
