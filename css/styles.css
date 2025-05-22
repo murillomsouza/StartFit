@@ -129,6 +129,18 @@ body {
   margin-right: 20px;
 }
 
+/*edição da seção 3 */
+.secao3 {
+  background-color: #000;
+  align-items: center;
+  text-align: center;
+  padding-top: 100px;
+  padding-bottom: 100px;
+  }
+.secao3 span {
+  color: red;
+}
+
 /* Seção inicial homepage */
 #home_init {
   background-image: url("../img/carrossel.png");
