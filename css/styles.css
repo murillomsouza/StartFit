@@ -105,6 +105,9 @@ body {
   color: white;
 }
 /*edição da seção 2 */
+.secao2 {
+  padding-bottom: 40px;
+}
 .secao2 h1 {
   padding: 30px 0px 0px 30px;
 }
@@ -140,6 +143,10 @@ body {
 .secao3 span {
   color: red;
 }
+
+/*edição do footer*/
+
+
 
 /* Seção inicial homepage */
 #home_init {
