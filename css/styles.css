@@ -2,6 +2,12 @@
   margin: 0;
   border: 0;
 }
+
+/*animação fluida*/
+html {
+  scroll-behavior: smooth;
+}
+
 /*edição no body*/
 body {
   background: #1e1e1e;
