@@ -29,6 +29,11 @@ body {
 .nav-link {
   padding: 0.5rem 0;
 }
+.nav-link:hover {
+  color: #ffffff70;
+  text-decoration: none;
+}
+
 /*edição da seção 1 */
 .secao1 {
   background-image: url("../img/bg-landing.png");
@@ -108,6 +113,9 @@ body {
 .secao2 {
   padding-bottom: 40px;
 }
+.secao2 {
+  padding-bottom: 40px;
+}
 .secao2 h1 {
   padding: 30px 0px 0px 30px;
 }
@@ -139,9 +147,45 @@ body {
   text-align: center;
   padding-top: 100px;
   padding-bottom: 100px;
-  }
+}
 .secao3 span {
   color: red;
+}
+
+/*edição do footer */
+
+.footer-custom {
+  background: #210012;
+  color: #fff;
+  margin-top: 0;
+  border-top: 2px solid #fff1;
+}
+.footer-divider {
+  border-top: 2px solid #fff1;
+  width: 100%;
+  margin-bottom: 10px;
+}
+.footer-link {
+  color: #fff;
+  text-decoration: none;
+  font-size: 1rem;
+  transition: color 0.2s;
+}
+.footer-link:hover {
+  color: red;
+  text-decoration: underline;
+}
+.footer-social {
+  color: #fff;
+  display: inline-block;
+  transition: color 0.2s, transform 0.2s;
+}
+.footer-social:hover {
+  color: red;
+  transform: scale(1.2) rotate(-10deg);
+}
+.footer-text {
+  font-size: 1rem;
 }
 
 /* Seção inicial homepage */
