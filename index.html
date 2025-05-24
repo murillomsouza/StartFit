@@ -17,6 +17,7 @@
     />
     <link rel="stylesheet" href="css/styles.css" />
     <link rel="icon" href="img/icon.png" type="image/png" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
   </head>
   <body>
     <!----------Barra Navegação Principal---------->
@@ -37,9 +38,6 @@
           </li>
           <li class="nav-itens">
             <a class="nav-link" href="backs.html">Costas</a>
-          </li>
-          <li class="nav-itens">
-            <a class="nav-link" href="#">Saiba Mais</a>
           </li>
         </ul>
         <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasDarkNavbar" aria-controls="offcanvasDarkNavbar" aria-label="Toggle navigation">
@@ -64,9 +62,6 @@
               <li class="nav-item">
                 <a class="nav-link" href="backs.html">Costas</a>
               </li>
-              <li class="nav-item">
-                <a class="nav-link" href="#">Saiba Mais</a>
-              </li>
             </ul>
           </div>
         </div>
@@ -78,7 +73,6 @@
       <p>O StartFit foi criado para revolucionar a maneira como iniciantes treinam. Domine a técnica<br>correta, maximize seus resultados e evite lesões com nossa plataforma de última geração.</p>
       <div></div>
         <a href="#" class="btn btn-iniciar">Iniciar</a>
-        <a href="#" class="btn btn-saiba">Saiba Mais</a>
       </div>
       <img src="img/icon.png" alt="Ícone" class="icone-secao1" />
     </section>
@@ -146,8 +140,39 @@
       <a href="#" class="btn btn-iniciar">ACESSAR AGORA</a>
     </section>
     <!----------Footer---------->
-    <footer>
-      
+    <footer class="footer-custom mt-0 pt-0 pb-0">
+      <!-- Logo e redes sociais -->
+      <div class="container py-3">
+        <div class="row align-items-center">
+          <!-- Logo -->
+          <div class="col-12 col-md-6 text-center text-md-start mb-3 mb-md-0">
+            <a href="homepage.html"><img src="img/logo.png" alt="StartFit Logo" style="height: 48px;"></a>
+          </div>
+          <!-- Redes sociais -->
+          <div class="col-12 col-md-6 text-center text-md-end">
+            <a href="https://www.linkedin.com/" target="_blank" class="footer-social mx-2" aria-label="LinkedIn">
+              <i class="bi bi-linkedin" style="font-size: 2.2rem;"></i>
+            </a>
+            <a href="https://github.com/murillomsouza/StartFit" target="_blank" class="footer-social mx-2" aria-label="GitHub">
+              <i class="bi bi-github" style="font-size: 2.2rem;"></i>
+            </a>
+          </div>
+        </div>
+        <!-- Linha divisória -->
+        <div class="footer-divider my-3"></div>
+        <!-- Segunda linha: direitos e links -->
+        <div class="row align-items-center">
+          <div class="col-12 col-md-6 text-center text-md-start mb-2 mb-md-0">
+            <div class="footer-text">
+              © 2025 StartFit – Todos os direitos reservados
+            </div>
+          </div>
+          <div class="col-12 col-md-6 text-center text-md-end">
+            <a href="#" class="footer-link mx-2">Termos de Uso</a>
+            <a href="#" class="footer-link mx-2">Políticas de Privacidade</a>
+          </div>
+        </div>
+      </div>
     </footer>
     <!----------scripts bootstrap---------->
     <script
