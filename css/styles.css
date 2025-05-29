@@ -2,7 +2,7 @@
   margin: 0;
   border: 0;
 }
-html{
+html {
   scroll-behavior: smooth;
 }
 /*edição no body*/
@@ -121,6 +121,8 @@ body {
 }
 .secao2 h1 {
   padding: 30px 0px 0px 30px;
+  font-family: "Palanquin Dark", sans-serif;
+  font-weight: bold;
 }
 .secao2 img {
   padding: 0px 0px 30px 25px;
@@ -141,6 +143,14 @@ body {
 }
 .border-avatar {
   margin-right: 20px;
+}
+.card-social {
+  color: #000;
+  display: inline-block;
+  transition: color 0.2s;
+}
+.card-social:hover {
+  color: red;
 }
 
 /*edição da seção 3 */
@@ -284,8 +294,8 @@ body {
 }
 
 .modal-card-purple {
-  width: 100%;          /* ocupa toda a largura do col */
-  height: 400px;        /* altura fixa pra todos os cards */
+  width: 100%; /* ocupa toda a largura do col */
+  height: 400px; /* altura fixa pra todos os cards */
   position: relative;
   border-radius: 10px;
   overflow: hidden;
@@ -302,18 +312,20 @@ body {
 
 .modal-card-purple img {
   width: 100%;
-  height: 100%;           /* força imagem a preencher todo o card */
-  object-fit: cover;      /* mantém proporção, corta partes que excedem */
+  height: 100%; /* força imagem a preencher todo o card */
+  object-fit: cover; /* mantém proporção, corta partes que excedem */
   display: block;
 }
 
 .overlay {
   position: absolute;
-  top: 0; left: 0;   right: 0;
+  top: 0;
+  left: 0;
+  right: 0;
   bottom: 0;
-  width: 100%; 
+  width: 100%;
   height: 100%;
-  background: rgba(0,0,0,0.4);
+  background: rgba(0, 0, 0, 0.4);
 }
 
 .title-hover {
@@ -335,9 +347,9 @@ body {
 }
 
 #modals-container > div {
-  margin-bottom: 1.5rem; 
+  margin-bottom: 1.5rem;
 }
 
 #modals-container-uppers > div {
-  margin-bottom: 1.5rem; 
+  margin-bottom: 1.5rem;
 }
