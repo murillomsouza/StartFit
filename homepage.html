@@ -24,7 +24,7 @@
       </a>
       <ul class="nav-links d-md-flex d-none me-auto">
         <li class="nav-itens">
-          <a class="nav-link active" aria-current="page" href="homepage.html">Home</a>
+          <a class="nav-link active" aria-current="page" href="homepage.html">Início</a>
         </li>
         <li class="nav-itens">
           <a class="nav-link" href="uppers.html">Superiores</a>
@@ -50,7 +50,7 @@
         <div class="offcanvas-body">
           <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
             <li class="nav-item">
-              <a class="nav-link active" aria-current="page" href="homepage.html">Home</a>
+              <a class="nav-link active" aria-current="page" href="homepage.html">Início</a>
             </li>
             <li class="nav-item">
               <a class="nav-link" href="uppers.html">Superiores</a>
@@ -77,36 +77,70 @@
   </section>
   <!-------------Seção aquecimentos----------->
   <section id="aquecimento_home">
-    <h1><i class="bi bi-chevron-right"></i>AQUECIMENTO</h1>
-    <div class="container my-5">
-      <div class="row" id="modals-container">
+    <h1 class="indices_secao"><i class="bi bi-chevron-right"></i>AQUECIMENTO</h1>
+    
         <!-------------Seção categorias----------->
         <section id="categorias_home">
-          <h1><i class="bi bi-chevron-right"></i>CATEGORIAS</h1>
-          <div class="container my-5">
-            <div class="row" id="modals-container">
-              <!-- Cards inseridos dinamicamente -->
-            </div>
-          </div>
-
-          <!-- Modal HTML -->
-          <div class="modal fade" id="gifModal" tabindex="-1" aria-hidden="true">
-            <div class="modal-dialog modal-dialog-centered modal-lg">
-              <div class="modal-content text-center p-3">
-                <h3 id="modalTitle" class="font-weight-bold mb-3"></h3>
-                <video id="modalGif" autoplay loop muted controls class="img-fluid mb-3"
-                  style="max-width: 100%; height: 30%;">
-                  <source src="" type="video/mp4">
-                  Seu navegador não suporta vídeo.
-                </video>
-
-                <p id="modalDescription"></p>
-                <button type="button" class="btn btn-danger text-dark" data-dismiss="modal">FECHAR</button>
+          <div class="container-fluid">
+            <h1 class="indices_secao"><i class="bi bi-chevron-right"></i>CATEGORIAS</h1>
+        
+            <div class="row g-6">
+              <!-- Card 1 -->
+              <div class="col-md-4">
+                <a href="uppers.html" class="text-decoration-none">
+                  <div class="categoria-card">
+                    <img src="img/superiores_home.png" alt="Superiores">
+                    <div class="categoria-title">Superiores</div>
+                  </div>
+                </a>
+              </div>
+        
+              <!-- Card 2 -->
+              <div class="col-md-4">
+                <a href="lowers.html" class="text-decoration-none">
+                  <div class="categoria-card">
+                    <img src="img/inferiores_home.png" alt="Inferiores">
+                    <div class="categoria-title">Inferiores</div>
+                  </div>
+                </a>
+              </div>
+        
+              <!-- Card 3 -->
+              <div class="col-md-4">
+                <a href="backs.html" class="text-decoration-none">
+                  <div class="categoria-card">
+                    <img src="img/backs_home.png" alt="Costas">
+                    <div class="categoria-title">Costas</div>
+                  </div>
+                </a>
               </div>
             </div>
           </div>
         </section>
-
+        <!----------Footer---------->
+    <footer class="footer-custom mt-0 pt-0 pb-0">
+      <!-- Logo -->
+      <div class="container py-3">
+        <div class="row align-items-center">
+          <div class="col-12 col-md-6 text-center text-md-start mb-3 mb-md-0">
+            <a href="homepage.html"><img src="img/logo.png" alt="StartFit Logo" style="height: 48px;"></a>
+          </div>
+        <!-- Linha divisória -->
+        <div class="footer-divider my-3"></div>
+        <!-- Segunda linha: direitos e links -->
+        <div class="row align-items-center">
+          <div class="col-12 col-md-6 text-center text-md-start mb-2 mb-md-0">
+            <div class="footer-text">
+              © 2025 StartFit – Todos os direitos reservados
+            </div>
+          </div>
+          <div class="col-12 col-md-6 text-center text-md-end">
+            <a href="#" class="footer-link mx-2">Termos de Uso</a>
+            <a href="#" class="footer-link mx-2">Políticas de Privacidade</a>
+          </div>
+        </div>
+      </div>
+    </footer>
 
         <!----------scripts bootstrap---------->
         <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"
