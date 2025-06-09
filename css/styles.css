@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Palanquin+Dark:wght@400;500;600;700&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Palanquin+Dark:wght@400;500;600;700&display=swap");
 
 * {
   margin: 0;
@@ -132,7 +132,6 @@ body {
 .secao2 h1 {
   padding: 30px 0px 0px 30px;
   font-family: "Palanquin Dark", sans-serif;
-
 }
 .secao2 img {
   padding: 0px 0px 30px 25px;
@@ -174,7 +173,6 @@ body {
 .secao3 span {
   color: red;
 }
-
 
 /* Seção inicial homepage */
 #home_init {
@@ -363,40 +361,48 @@ h1 {
   margin-bottom: 1.5rem;
 }
 
-  /*edição do footer */
-  .footer-custom {
-    background: #210012;
-    color: #fff;
-    margin-top: 0;
-    border-top: 2px solid #fff1;
+/*edição do titulo mobile (lowers and backs)*/
+@media (max-width: 767.98px) {
+  #exercicios_backs,
+  #exercicios_inferiores {
+    padding-top: 30px;
   }
-  .footer-divider {
-    border-top: 2px solid #fff1;
-    width: 100%;
-    margin-bottom: 10px;
-  }
-  .footer-link {
-    color: #fff;
-    text-decoration: none;
-    font-size: 1rem;
-    transition: color 0.2s;
-  }
-  .footer-link:hover {
-    color: red;
-    text-decoration: underline;
-  }
-  .footer-social {
-    color: #fff;
-    display: inline-block;
-    transition: color 0.2s, transform 0.2s;
-  }
-  .footer-social:hover {
-    color: red;
-    transform: scale(1.2) rotate(-10deg);
-  }
-  .footer-text {
-    font-size: 1rem;
-  }
+}
+
+/*edição do footer */
+.footer-custom {
+  background: #210012;
+  color: #fff;
+  margin-top: 0;
+  border-top: 2px solid #fff1;
+}
+.footer-divider {
+  border-top: 2px solid #fff1;
+  width: 100%;
+  margin-bottom: 10px;
+}
+.footer-link {
+  color: #fff;
+  text-decoration: none;
+  font-size: 1rem;
+  transition: color 0.2s;
+}
+.footer-link:hover {
+  color: red;
+  text-decoration: underline;
+}
+.footer-social {
+  color: #fff;
+  display: inline-block;
+  transition: color 0.2s, transform 0.2s;
+}
+.footer-social:hover {
+  color: red;
+  transform: scale(1.2) rotate(-10deg);
+}
+.footer-text {
+  font-size: 1rem;
+}
 #modalMedia img {
   max-width: 100%;
   max-height: 315px;
