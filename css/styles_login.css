@@ -1,0 +1,12 @@
+@import url("https://fonts.googleapis.com/css2?family=Palanquin+Dark:wght@400;500;600;700&display=swap");
+
+* {
+  margin: 0;
+  border: 0;
+}
+html {
+  scroll-behavior: smooth;
+}
+body{
+  background-image: ("../img/foto_login.png");
+}
