@@ -3,22 +3,50 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Login</title>
-    <link rel="stylesheet" href="css/styles_login.cs">
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css">
+    <title>StartFit - Login</title>
+    <link rel="stylesheet" href="css/styles_login.css">
 </head>
 <body>
-    <div>
 
+<div class="container">
+
+    <div class="left">
+        <img src="img/foto_login.png">
     </div>
-    <aside>
-        <div>
-        <h1>Teste123</h1>
-        </div>
-        
-    </aside>
-    <img src="img/foto_login.png" alt="Foto do Login">
 
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js">    
+    <div class="right">
+        <form class="form-box" action="validador.php" method="post">
+
+            <img src="img/logo.png" class="logo">
+
+            
+                <label>E-mail ou telefone</label>
+                <input type="text" placeholder="seuemailaqui@gmail.com">
+
+                <label>Senha</label>
+                <input type="password" placeholder="Insira sua senha">
+
+                <a class="forgot" href="#">Esqueceu a senha?</a>
+
+                <button class="btn">Entrar</button>
+            
+            
+            <p class="or">Ou faça login com</p>
+
+            <div class="social">
+                <div class="icon google">G</div>
+                <div class="icon apple"></div>
+            </div>
+
+            <p class="register">
+                Ainda não tem uma conta?
+                <a href="#">Clique aqui para se cadastrar!</a>
+            </p>
+
+        </form>
+    </div>
+
+</div>
+
 </body>
 </html>
