@@ -29,18 +29,10 @@
                 <a class="forgot" href="#">Esqueceu a senha?</a>
 
                 <button class="btn">Entrar</button>
-            
-            
-            <p class="or">Ou faça login com</p>
-
-            <div class="social">
-                <div class="icon google">G</div>
-                <div class="icon apple"></div>
-            </div>
 
             <p class="register">
                 Ainda não tem uma conta?
-                <a href="#">Clique aqui para se cadastrar!</a>
+                <a href="cadastrouser.php">Clique aqui para se cadastrar!</a>
             </p>
 
         </form>
