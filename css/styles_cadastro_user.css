@@ -10,6 +10,10 @@ body{
     background:#000;
 }
 
+.escondido {
+    display: none;
+}
+
 .container{
     display:flex;
     height:100vh;

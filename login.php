@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>StartFit - Login</title>
     <link rel="stylesheet" href="css/styles_login.css">
+    <link rel="icon" href="img/icon.png" type="image/png" />
 </head>
 <body>
 
@@ -29,6 +30,8 @@
                 <a class="forgot" href="#">Esqueceu a senha?</a>
 
                 <button class="btn">Entrar</button>
+
+                <br>
 
             <p class="register">
                 Ainda não tem uma conta?
