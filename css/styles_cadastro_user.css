@@ -91,6 +91,7 @@ input:focus{
 }
 
 .btn{
+    display: none;
     background:#d40000;
     border:3px solid white;
     border-radius:25px;

@@ -57,7 +57,7 @@
                     <input type="text" placeholder="Digite sua credencial">
                     
                 </div>
-                <button class="btn" type="submit">Cadastrar</button>
+                <button id="botao_cadastro" class="btn" type="submit">Cadastrar</button>
 
                 
             <br>
