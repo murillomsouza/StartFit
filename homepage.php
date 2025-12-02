@@ -39,6 +39,9 @@ include ('protect.php');
         <li class="nav-itens">
           <a class="nav-link" href="backs.php">Costas</a>
         </li>
+        <li class="nav-itens">
+          <a class="nav-link" href="perfil.php">Perfil</a>
+        </li>
       </ul>
       <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasDarkNavbar"
         aria-controls="offcanvasDarkNavbar" aria-label="Toggle navigation">
@@ -64,6 +67,9 @@ include ('protect.php');
             </li>
             <li class="nav-item">
               <a class="nav-link" href="backs.php">Costas</a>
+            </li>
+            <li class="nav-itens">
+              <a class="nav-link" href="perfil.php">Perfil</a>
             </li>
             <li class="nav-item">
               <a class="nav-link" href="logout.php" style="color: #ff6b6b;">Sair</a>
