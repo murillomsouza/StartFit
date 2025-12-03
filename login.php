@@ -55,10 +55,10 @@ if ($_SERVER["REQUEST_METHOD"] === "POST") {
             <?php endif; ?>
 
             <label>E-mail</label>
-            <input type="text" name="email" placeholder="seuemailaqui@gmail.com" value="<?php echo isset($_POST['email']) ? htmlspecialchars($_POST['email']) : ''; ?>">
+            <input type="text" name="email" placeholder="seuemailaqui@gmail.com" value="<?php echo isset($_POST['email']) ? htmlspecialchars($_POST['email']) : ''; ?>" required>
 
             <label>Senha</label>
-            <input type="password" name="senha" placeholder="Insira sua senha">
+            <input type="password" name="senha" placeholder="Insira sua senha" required>
 
             <a class="forgot" href="#">Esqueceu a senha?</a>
 

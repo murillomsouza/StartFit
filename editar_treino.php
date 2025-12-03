@@ -215,10 +215,10 @@
           <img src="img/logo.png" alt="Logo StartFit"/>
         </a>
         <ul class="nav-links d-md-flex d-none me-auto">
-          <li class="nav-itens"><a class="nav-link" href="homepage.html">Início</a></li>
-          <li class="nav-itens"><a class="nav-link" href="uppers.html">Superiores</a></li>
-          <li class="nav-itens"><a class="nav-link" href="lowers.html">Inferiores</a></li>
-          <li class="nav-itens"><a class="nav-link" href="backs.html">Costas</a></li>
+          <li class="nav-itens"><a class="nav-link" href="homepage.php">Início</a></li>
+          <li class="nav-itens"><a class="nav-link" href="uppers.php">Superiores</a></li>
+          <li class="nav-itens"><a class="nav-link" href="lowers.php">Inferiores</a></li>
+          <li class="nav-itens"><a class="nav-link" href="backs.php">Costas</a></li>
           <li class="nav-itens"><a class="nav-link" href="alunos.php">Alunos</a></li>
         </ul>
         <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasDarkNavbar">
@@ -231,10 +231,10 @@
           </div>
           <div class="offcanvas-body">
             <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
-              <li class="nav-item"><a class="nav-link" href="homepage.html">Início</a></li>
-              <li class="nav-item"><a class="nav-link" href="uppers.html">Superiores</a></li>
-              <li class="nav-item"><a class="nav-link" href="lowers.html">Inferiores</a></li>
-              <li class="nav-item"><a class="nav-link" href="backs.html">Costas</a></li>
+              <li class="nav-item"><a class="nav-link" href="homepage.php">Início</a></li>
+              <li class="nav-item"><a class="nav-link" href="uppers.php">Superiores</a></li>
+              <li class="nav-item"><a class="nav-link" href="lowers.php">Inferiores</a></li>
+              <li class="nav-item"><a class="nav-link" href="backs.php">Costas</a></li>
               <li class="nav-item"><a class="nav-link" href="alunos.php">Alunos</a></li>
             </ul>
           </div>

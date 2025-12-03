@@ -66,16 +66,19 @@
         </a>
         <ul class="nav-links d-md-flex d-none me-auto">
           <li class="nav-itens">
-            <a class="nav-link active" aria-current="page" href="homepage.html">Início</a>
+            <a class="nav-link" aria-current="page" href="homepage.php">Início</a>
           </li>
           <li class="nav-itens">
-            <a class="nav-link" href="uppers.html">Superiores</a>
+            <a class="nav-link" href="uppers.php">Superiores</a>
           </li>
           <li class="nav-itens">
-            <a class="nav-link" href="lowers.html">Inferiores</a>
+            <a class="nav-link" href="lowers.php">Inferiores</a>
           </li>
           <li class="nav-itens">
-            <a class="nav-link" href="backs.html">Costas</a>
+            <a class="nav-link" href="backs.php">Costas</a>
+          </li>
+          <li class="nav-itens">
+            <a class="nav-link active" href="alunos.php">Alunos</a>
           </li>
         </ul>
         <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasDarkNavbar" aria-controls="offcanvasDarkNavbar" aria-label="Toggle navigation">
@@ -89,16 +92,22 @@
           <div class="offcanvas-body">
             <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
               <li class="nav-item">
-                <a class="nav-link active" aria-current="page" href="homepage.html">Início</a>
+                <a class="nav-link " aria-current="page" href="homepage.php">Início</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link" href="uppers.html">Superiores</a>
+                <a class="nav-link" href="uppers.php">Superiores</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link" href="lowers.html">Inferiores</a>
+                <a class="nav-link" href="lowers.php">Inferiores</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link" href="backs.html">Costas</a>
+                <a class="nav-link" href="backs.php">Costas</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link active" href="alunos.php">Alunos</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="logout.php" style="color: #ff6b6b;">Sair</a>
               </li>
             </ul>
           </div>
