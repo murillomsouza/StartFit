@@ -1,39 +1,28 @@
 <?php
-session_start();
-include('validador.php');
+include("validador.php");
 
-if($_SERVER['REQUEST_METHOD'] === 'POST') {
-    
-    $email = isset($_POST['email']) ? trim($_POST['email']) : '';
-    $senha = isset($_POST['senha']) ? trim($_POST['senha']) : '';
+if ($_SERVER["REQUEST_METHOD"] === "POST") {
 
-    if(strlen($email) == 0) {
-        $erro = "Preencha seu e-mail";
-    } else if(strlen($senha) == 0) {
-        $erro = "Preencha sua senha";
-    } else {
+    $email = $_POST['email'];
+    $senha = $_POST['senha'];
 
-        $email = $mysqli->real_escape_string($email);
-        $senha = $mysqli->real_escape_string($senha);
+    $sqlAluno = "SELECT * FROM aluno WHERE email = '$email' AND senha = '$senha'";
+    $resultadoAluno = $mysqli->query($sqlAluno);
 
-        $sql_code = "SELECT * FROM users WHERE email = '$email' AND senha = '$senha'";
-        $sql_query = $mysqli->query($sql_code) or die("Falha na execução do código SQL: " . $mysqli->error);
-
-        $quantidade = $sql_query->num_rows;
-
-        if($quantidade == 1) {
-            
-            $usuario = $sql_query->fetch_assoc();
-            $_SESSION['id'] = $usuario['id'];
-            $_SESSION['nome'] = $usuario['nome'];
-
-            header("Location: homepage.php");
-            exit();
-
-        } else {
-            $erro = "Falha ao logar! E-mail ou senha incorretos";
-        }
+    if ($resultadoAluno->num_rows > 0) {
+        header("Location: aluno.php");
+        exit();
     }
+
+    $sqlProf = "SELECT * FROM professor WHERE email = '$email' AND senha = '$senha'";
+    $resultadoProf = $mysqli->query($sqlProf);
+
+    if ($resultadoProf->num_rows > 0) {
+        header("Location: professor.php");
+        exit();
+    }
+
+    echo "Usuário ou senha incorretos!";
 }
 ?>
 

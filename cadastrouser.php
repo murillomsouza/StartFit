@@ -16,57 +16,55 @@
     </div>
 
     <div class="left">
-        <form class="form-box" action="validador.php" method="post">
+     <form class="form-box" action="cadastro_action.php" method="post">
 
-            <img src="img/logo.png" class="logo">
+    <img src="img/logo.png" class="logo">
 
-                <label>Tipo de Cadastro</label>
-                <select id="tipo_user" name="usuario" class="input" onchange="alterarFormulario()">
-                    <option value="">Selecione</option>
-                    <option value="aluno">Aluno</option>
-                    <option value="professor">Professor</option>
-                </select>
-                    
-                <div id="campos_aluno" class="escondido">
-                    <label>Nome Completo</label>
-                
-                    <input type="text" placeholder="Digite seu nome">
-                
-                    <label>E-mail</label>
-                    <input type="text" placeholder="seuemailaqui@gmail.com">
+    <label>Tipo de Cadastro</label>
+    <select id="tipo_user" name="tipo_user" class="input" onchange="alterarFormulario()" required>
+        <option value="">Selecione</option>
+        <option value="aluno">Aluno</option>
+        <option value="professor">Professor</option>
+    </select>
 
-                    <label>Data de Nascimento</label>
-                    <input type="date" placeholder="dd/mm/aaaa">
+    <div id="campos_aluno" class="escondido">
+        <label>Nome Completo</label>
+        <input type="text" name="nome_aluno" placeholder="Digite seu nome">
 
-                    <label>Senha</label>
-                    <input type="password" placeholder="Insira sua senha"><br>
+        <label>E-mail</label>
+        <input type="email" name="email_aluno" placeholder="email@example.com">
 
-                </div>
+        <label>Data de Nascimento</label>
+        <input type="date" name="data_nasc_aluno">
 
-                <div id="campos_prof" class="escondido">
-                    <label>Nome Completo</label>
-                    <input type="text" placeholder="Digite seu nome">
-                
-                    <label>E-mail</label>
-                    <input type="text" placeholder="seuemailaqui@gmail.com">
+        <label>Senha</label>
+        <input type="password" name="senha_aluno" placeholder="Insira sua senha">
+    </div>
 
-                    <label>Senha</label>
-                    <input type="password" placeholder="Insira sua senha"><br>
+    <div id="campos_prof" class="escondido">
+        <label>Nome Completo</label>
+        <input type="text" name="nome_prof" placeholder="Digite seu nome">
 
-                    <label>Credencial</label>
-                    <input type="text" placeholder="Digite sua credencial">
-                    
-                </div>
-                <button id="botao_cadastro" class="btn" type="submit">Cadastrar</button>
+        <label>E-mail</label>
+        <input type="email" name="email_prof" placeholder="email@example.com">
 
-                
-            <br>
-            <p class="register">
-                Já tem uma conta?
-                <a href="login.php">Clique aqui para se conectar!</a>
-            </p>
+        <label>Senha</label>
+        <input type="password" name="senha_prof" placeholder="Insira sua senha">
 
-        </form>
+        <label>Credencial</label>
+        <input type="text" name="credencial_prof" placeholder="Digite sua credencial">
+    </div>
+
+    <button id="botao_cadastro" class="btn" type="submit">Cadastrar</button>
+
+    <br>
+    <p class="register">
+        Já tem uma conta?
+        <a href="login.php">Clique aqui para se conectar!</a>
+    </p>
+
+</form>
+
     </div>
 
 </div>
