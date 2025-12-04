@@ -14,7 +14,7 @@ if ($tipo === "aluno") {
             VALUES ('$nome', '$email', '$data', '$senha')";
 
     if ($mysqli->query($sql)) {
-        header("Location: aluno.php");
+        header("Location: homepage.php");
         exit;
     } else {
         echo $mysqli->error;
@@ -32,7 +32,7 @@ elseif ($tipo === "professor") {
             VALUES ('$nome', '$email', '$senha', '$credencial')";
 
     if ($mysqli->query($sql)) {
-        header("Location: professor.php");
+        header("Location: alunos.php");
         exit;
     } else {
         echo $mysqli->error;

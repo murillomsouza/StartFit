@@ -10,7 +10,7 @@ if ($_SERVER["REQUEST_METHOD"] === "POST") {
     $resultadoAluno = $mysqli->query($sqlAluno);
 
     if ($resultadoAluno->num_rows > 0) {
-        header("Location: aluno.php");
+        header("Location: homepage.php");
         exit();
     }
 
@@ -18,7 +18,7 @@ if ($_SERVER["REQUEST_METHOD"] === "POST") {
     $resultadoProf = $mysqli->query($sqlProf);
 
     if ($resultadoProf->num_rows > 0) {
-        header("Location: professor.php");
+        header("Location: alunos.php");
         exit();
     }
 

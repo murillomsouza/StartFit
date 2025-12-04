@@ -1,8 +1,6 @@
 <?php
-$conn = new mysqli("localhost", "usuario", "senha", "startfit_db");
-if ($conn->connect_error) { die("Erro: " . $conn->connect_error); }
+include("validador.php");
 
-// Upload
 $foto_nome = null;
 if (!empty($_FILES['foto']['name'])) {
     $ext = pathinfo($_FILES['foto']['name'], PATHINFO_EXTENSION);
@@ -20,12 +18,10 @@ $alt   = $_POST['altura'];
 
 $sql = "INSERT INTO usuarios (nome,email,telefone,cpf,nascimento,peso,altura,foto)
 VALUES (?,?,?,?,?,?,?,?)";
-$stmt = $conn->prepare($sql);
+$stmt = $mysqli->prepare($sql);
 $stmt->bind_param("ssssssss", $nome,$email,$tel,$cpf,$nasc,$peso,$alt,$foto_nome);
 $stmt->execute();
 $stmt->close();
-$conn->close();
 
 echo "<script>alert('Salvo com sucesso!'); window.location='perfil.php';</script>";
-
 ?>
