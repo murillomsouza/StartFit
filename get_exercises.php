@@ -1,6 +1,6 @@
 <?php
 header('Content-Type: application/json; charset=utf-8');
-require_once __DIR__ . '/db.php';
+require_once __DIR__ . '/validador.php';
 
 try {
     $stmt = $conexao->query('SELECT id_exercicio as id, nome as name, categoria as category, equipamento as equipment, imagem as image FROM exercicios ORDER BY nome');

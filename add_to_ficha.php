@@ -1,6 +1,6 @@
 <?php
 header('Content-Type: application/json; charset=utf-8');
-require_once __DIR__ . '/db.php';
+require_once __DIR__ . '/validador.php';
 
 $entrada = $_POST;
 if (!isset($entrada['aluno']) || !isset($entrada['id_exercicio'])) {
