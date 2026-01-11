@@ -144,7 +144,7 @@ body {
   max-width: 260px;
   box-shadow: 0 2px 8px rgba(0, 0, 0, 0.15);
   background: #fff;
-  z-index: 1; /* Garante que o card fique acima de outros elementos se sobreposto */
+  z-index: 1;
   border: 10px solid transparent;
   background-image: linear-gradient(#fff, #fff),
     /* Fundo branco do card */ linear-gradient(135deg, #c50000, #a800e1); /* Gradiente para a borda */
@@ -411,4 +411,280 @@ h1 {
   display: block;
   margin: 0 auto;
   border-radius: 8px;
+}
+
+/* Cores de exercícios por categoria */
+.card-exercicio {
+  position: relative;
+  border-radius: 20px;
+  padding: 0;
+  height: 300px;
+  overflow: hidden;
+  cursor: pointer;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  border: 5px solid transparent;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.3);
+}
+
+.card-exercicio:hover {
+  transform: scale(1.05);
+  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.5);
+}
+
+.card-exercicio img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+}
+
+.card-exercicio-titulo {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background: rgba(0, 0, 0, 0.7);
+  color: white;
+  padding: 12px;
+  font-weight: bold;
+  font-size: 0.95rem;
+  text-align: center;
+}
+
+.card-exercicio-footer {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  display: flex;
+  gap: 8px;
+}
+
+.btn-remove-exercicio {
+  background-color: rgba(0, 0, 0, 0.6);
+  border: none;
+  color: white;
+  font-size: 1.5rem;
+  cursor: pointer;
+  padding: 5px 10px;
+  border-radius: 8px;
+  transition: background-color 0.3s ease;
+}
+
+.btn-remove-exercicio:hover {
+  background-color: rgba(200, 0, 0, 0.8);
+}
+
+/* Categorias - Cores */
+.card-inferior {
+  background: linear-gradient(135deg, #9c27b0 0%, #6a1b9a 100%);
+}
+
+.card-inferior img {
+  opacity: 0.7;
+}
+
+.card-costas {
+  background: linear-gradient(135deg, #ff9800 0%, #f57c00 100%);
+}
+
+.card-costas img {
+  opacity: 0.7;
+}
+
+.card-superior {
+  background: linear-gradient(135deg, #00bcd4 0%, #0097a7 100%);
+}
+
+.card-superior img {
+  opacity: 0.7;
+}
+
+.card-peito {
+  background: linear-gradient(135deg, #e91e63 0%, #c2185b 100%);
+}
+
+.card-peito img {
+  opacity: 0.7;
+}
+
+.card-perna {
+  background: linear-gradient(135deg, #ff5722 0%, #d84315 100%);
+}
+
+.card-perna img {
+  opacity: 0.7;
+}
+
+/* Modal melhorado - similar à imagem */
+.modal-content-exercise {
+  background: white !important;
+  border-radius: 20px !important;
+  border: 8px solid #c50000 !important;
+  box-shadow: 0 20px 60px rgba(0, 0, 0, 0.7);
+  overflow: hidden;
+  max-height: 90vh;
+}
+
+.modal-header-exercise {
+  background: white;
+  border: none;
+  padding: 24px 28px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.modal-title-exercise {
+  font-size: 1.2rem;
+  font-weight: bold;
+  color: #1a1a1a;
+  margin: 0;
+}
+
+.modal-body-exercise {
+  background: white;
+  padding: 28px;
+}
+
+.exercise-name-title {
+  font-size: 1.5rem;
+  font-weight: bold;
+  color: #1a1a1a;
+  margin: 0 0 16px 0;
+  line-height: 1.3;
+}
+
+.exercise-tags-container {
+  display: flex;
+  gap: 8px;
+  flex-wrap: wrap;
+  margin-bottom: 16px;
+}
+
+.exercise-tag {
+  display: inline-block;
+  padding: 7px 16px;
+  border-radius: 20px;
+  font-weight: bold;
+  font-size: 0.8rem;
+  text-align: center;
+  white-space: nowrap;
+}
+
+.exercise-tag-categoria {
+  background-color: #00bcd4;
+  color: white;
+}
+
+.exercise-tag-equipamento {
+  background-color: #555;
+  color: white;
+}
+
+.exercise-info-section {
+  margin-top: 8px;
+}
+
+.exercise-execution-label {
+  font-weight: bold;
+  color: #1a1a1a;
+  font-size: 0.95rem;
+  margin-bottom: 10px;
+  text-transform: capitalize;
+}
+
+.exercise-execution-text {
+  color: #333;
+  font-size: 0.9rem;
+  line-height: 1.7;
+  word-break: break-word;
+}
+
+.exercise-info-right {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.modal-image-container-exercise {
+  width: 100%;
+  height: 320px;
+  background: linear-gradient(180deg, #a0a0a0, #707070);
+  border-radius: 16px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
+  position: relative;
+}
+
+.modal-image-container-exercise img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.modal-image-container-exercise::before {
+  content: "▶";
+  position: absolute;
+  font-size: 3rem;
+  color: rgba(255, 255, 255, 0.6);
+  z-index: 1;
+  pointer-events: none;
+}
+
+.modal-footer-exercise {
+  background: white;
+  border-top: 1px solid #eee;
+  padding: 20px 28px 28px 28px;
+  display: flex;
+  justify-content: center;
+}
+
+.btn-modal-exercise {
+  padding: 12px 40px;
+  font-weight: bold;
+  border: 3px solid;
+  border-radius: 25px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  font-size: 0.95rem;
+  text-transform: none;
+}
+
+.btn-fechar-exercise {
+  background-color: white;
+  color: #c50000;
+  border-color: #c50000;
+}
+
+.btn-fechar-exercise:hover {
+  background-color: #c50000;
+  color: white;
+  transform: scale(1.05);
+}
+
+/* Responsivo para telas menores */
+@media (max-width: 768px) {
+  .modal-body-exercise {
+    grid-template-columns: 1fr;
+    gap: 16px;
+    padding: 0 20px 20px 20px;
+  }
+
+  .modal-header-exercise {
+    padding: 16px 20px;
+  }
+
+  .modal-footer-exercise {
+    padding: 16px 20px 20px 20px;
+  }
+
+  .modal-image-container-exercise {
+    height: 250px;
+  }
+
+  .exercise-name-title {
+    font-size: 1.2rem;
+  }
 }

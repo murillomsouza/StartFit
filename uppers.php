@@ -1,0 +1,148 @@
+<?php
+include ('protect.php');
+?>
+
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Superiores</title>
+  <meta name='Projeto StartFit'>
+  <meta description="">
+  <meta keywords="Academia, Fitness, Treinos online, Como iniciar na academia, musculação, fisiculturismo">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.6/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-4Q6Gf2aSP4eDXB8Miphtr37CMZZQ5oXLH2yaXMJ2w8e2ZtHTl7GptT4jmndRuHDT" crossorigin="anonymous" />
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.1/font/bootstrap-icons.min.css">1
+  <link rel="stylesheet" href="css/styles.css" />
+  <link rel="icon" href="img/icon.png" type="image/png" />
+</head>
+
+<body>
+  <!----------Barra Navegação Principal---------->
+  <nav class="navbar navbar-dark bg-custom fixed-top">
+    <div class="container-fluid">
+      <a class="navbar-brand" href="homepage.php"><img src="img/logo.png" alt="Logo StartFit" /></a>
+      <ul class="nav-links d-md-flex d-none me-auto">
+        <li class="nav-itens">
+          <a class="nav-link active" aria-current="page" href="homepage.php">Início</a>
+        </li>
+        <li class="nav-itens">
+          <a class="nav-link" href="uppers.php">Superiores</a>
+        </li>
+        <li class="nav-itens">
+          <a class="nav-link" href="lowers.php">Inferiores</a>
+        </li>
+        <li class="nav-itens">
+          <a class="nav-link" href="backs.php">Costas</a>
+        </li>
+        <li class="nav-itens">
+          <a class="nav-link" href="perfil.php">Perfil</a>
+        </li>
+      </ul>
+      <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasDarkNavbar"
+        aria-controls="offcanvasDarkNavbar" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="offcanvas offcanvas-end bg-custom text-white" tabindex="-1" id="offcanvasDarkNavbar"
+        aria-labelledby="offcanvasDarkNavbarLabel">
+        <div class="offcanvas-header">
+          <h5 class="offcanvas-title" id="offcanvasDarkNavbarLabel">Menu</h5>
+          <button type="button" class="btn-close btn-close-white" data-bs-dismiss="offcanvas"
+            aria-label="Close"></button>
+        </div>
+        <div class="offcanvas-body">
+          <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
+            <li class="nav-item">
+              <a class="nav-link" aria-current="page" href="homepage.php">Início</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link active" href="uppers.php">Superiores</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="lowers.php">Inferiores</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="backs.php">Costas</a>
+            </li>
+            <li class="nav-itens">
+                <a class="nav-link" href="perfil.php">Perfil</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="logout.php" style="color: #ff6b6b;">Sair</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </nav>
+<!----------Seção superiores---------->
+  <section id="exercicios_uppers">
+    <h1 class="indices_secao"><i class="bi bi-chevron-right"></i>SUPERIORES</h1>
+    <div class="container my-5">
+      <div class="row" id="modals-container-uppers">
+        <!-- Cards inseridos dinamicamente -->
+      </div>
+    </div>
+
+    <!-- Modal HTML -->
+    <div class="modal fade" id="gifModal" tabindex="-1" aria-hidden="true">
+      <div class="modal-dialog modal-dialog-centered modal-lg">
+        <div class="modal-content text-center p-3">
+          <h3 id="modalTitle" class="font-weight-bold mb-3"></h3>
+          <video id="modalGif" autoplay loop muted controls class="img-fluid mb-3"
+            style="max-width: 100%; height: 30%;">
+            <source src="" type="video/mp4">
+            Seu navegador não suporta vídeo.
+          </video>
+          <p id="modalDescription"></p>
+          <button type="button" class="btn btn-danger text-dark" data-dismiss="modal">FECHAR</button>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!----------Footer---------->
+  <footer class="footer-custom mt-0 pt-0 pb-0">
+    <!-- Logo -->
+    <div class="container py-3">
+      <div class="row align-items-center">
+        <div class="col-12 col-md-6 text-center text-md-start mb-3 mb-md-0">
+          <a href="homepage.php"><img src="img/logo.png" alt="StartFit Logo" style="height: 48px;"></a>
+        </div>
+      <!-- Linha divisória -->
+      <div class="footer-divider my-3"></div>
+      <!-- Segunda linha: direitos e links -->
+      <div class="row align-items-center">
+        <div class="col-12 col-md-6 text-center text-md-start mb-2 mb-md-0">
+          <div class="footer-text">
+            © 2025 StartFit – Todos os direitos reservados
+          </div>
+        </div>
+        <div class="col-12 col-md-6 text-center text-md-end">
+          <a href="#" class="footer-link mx-2">Termos de Uso</a>
+          <a href="#" class="footer-link mx-2">Políticas de Privacidade</a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+
+  <!----------scripts bootstrap---------->
+  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"
+    integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r"
+    crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.6/dist/js/bootstrap.min.js"
+    integrity="sha384-RuyvpeZCxMJCqVUGFI0Do1mQrods/hhxYlcVfGPOfQtPJh0JCw12tUAZ/Mv10S7D"
+    crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.6/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-j1CDi7MgGQ12Z7Qab0qlWQ/Qqz24Gc6BM0thvEMVjHnfYGF0rmFCozFSxQBxwHKO"
+    crossorigin="anonymous"></script>
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/js/bootstrap.bundle.min.js"></script>
+  <!----------scripts JavaScript---------->
+  <script src="js/scripts.js"></script>
+
+</body>
+
+</html>

@@ -18,8 +18,46 @@
     <link rel="stylesheet" href="css/styles.css" />
     <link rel="icon" href="img/icon.png" type="image/png" />
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+    <style>
+      html, body {
+        height: 100%;
+      }
+      body {
+        display: flex;
+        flex-direction: column;
+      }
+      .avaliacoes-section {
+        flex: 1;
+      }
+      .footer-custom {
+        margin-top: auto;
+      }
+      body.alunos-page .avaliacao-card {
+        background-image: linear-gradient(135deg, #1e1e1e, #1e1e1e),
+          linear-gradient(135deg, #c50000, #a800e1);
+        background-clip: padding-box, border-box;
+        border: 10px solid transparent;
+        box-shadow: 0 2px 8px rgba(0, 0, 0, 0.25);
+      }
+      body.alunos-page .card-title {
+        color: #fff;
+        font-weight: 700;
+      }
+      body.alunos-page .card-img-top {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+      }
+      body.alunos-page .card-img-top img.border-avatar {
+        margin: 0 auto;
+        display: block;
+        max-width: 120px;
+        width: 100%;
+        height: auto;
+      }
+    </style>
   </head>
-  <body>
+  <body class="alunos-page">
     <!----------Barra Navegação Principal---------->
     <nav class="navbar navbar-dark bg-custom fixed-top">
       <div class="container-fluid">
@@ -28,16 +66,19 @@
         </a>
         <ul class="nav-links d-md-flex d-none me-auto">
           <li class="nav-itens">
-            <a class="nav-link active" aria-current="page" href="homepage.html">Início</a>
+            <a class="nav-link" aria-current="page" href="homepage.php">Início</a>
           </li>
           <li class="nav-itens">
-            <a class="nav-link" href="uppers.html">Superiores</a>
+            <a class="nav-link" href="uppers.php">Superiores</a>
           </li>
           <li class="nav-itens">
-            <a class="nav-link" href="lowers.html">Inferiores</a>
+            <a class="nav-link" href="lowers.php">Inferiores</a>
           </li>
           <li class="nav-itens">
-            <a class="nav-link" href="backs.html">Costas</a>
+            <a class="nav-link" href="backs.php">Costas</a>
+          </li>
+          <li class="nav-itens">
+            <a class="nav-link active" href="alunos.php">Alunos</a>
           </li>
         </ul>
         <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasDarkNavbar" aria-controls="offcanvasDarkNavbar" aria-label="Toggle navigation">
@@ -51,51 +92,41 @@
           <div class="offcanvas-body">
             <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
               <li class="nav-item">
-                <a class="nav-link active" aria-current="page" href="homepage.html">Início</a>
+                <a class="nav-link " aria-current="page" href="homepage.php">Início</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link" href="uppers.html">Superiores</a>
+                <a class="nav-link" href="uppers.php">Superiores</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link" href="lowers.html">Inferiores</a>
+                <a class="nav-link" href="lowers.php">Inferiores</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link" href="backs.html">Costas</a>
+                <a class="nav-link" href="backs.php">Costas</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link active" href="alunos.php">Alunos</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="logout.php" style="color: #ff6b6b;">Sair</a>
               </li>
             </ul>
           </div>
         </div>
       </div>
     </nav>
-    <!----------Primeira Seção---------->
-    <section class="secao1">
-      <h1>TRANSFORMAÇÃO FITNESS</h1>
-      <p>O StartFit foi criado para revolucionar a maneira como iniciantes treinam. Domine a técnica<br>correta, maximize seus resultados e evite lesões com nossa plataforma de última geração.</p>
-      <div></div>
-        <a href="#homep" class="btn btn-iniciar">INICIAR</a>
-      </div>
-      <img src="img/icon.png" alt="Ícone" class="icone-secao1" />
-    </section>
-    <!----------Segunda Seção---------->
-    <section class="secao2">
-      <h1>FUNDADORES</h1>
-      <img src="img/linha.png" alt="">
+    <!----------Seção Alunos---------->
+    <section class="avaliacoes-section mt-5 pt-5">
       <div class="container mt-4">
-    <div class="row g-3 row-cols-1 row-cols-sm-2 row-cols-md-4 row-cols-lg-4">
+    <div class="row g-2 row-cols-2 row-cols-sm-3 row-cols-md-4 row-cols-lg-4">
       <!-- Card 1 -->
       <div class="col">
         <div class="card avaliacao-card text-center mx-auto">
           <div class="card-img-top d-flex justify-content-center mt-3">
-            <img src="img/cauas.png" alt="Avatar" class="border-avatar">
+            <img src="img/IconeBorda.png" alt="Avatar" class="border-avatar">
           </div>
           <div class="card-body">
-            <h5 class="card-title">CAUÃ SANTOS</h5>
-              <a href="https://www.linkedin.com/in/cauaoliveirasantos/" target="_blank" class="card-social mx-2" aria-label="LinkedIn">
-              <i class="bi bi-linkedin" style="font-size: 2.2rem;"></i>
-            </a>
-            <a href="https://github.com/CauaOSantos" target="_blank" class="card-social mx-2" aria-label="GitHub">
-              <i class="bi bi-github" style="font-size: 2.2rem;"></i>
-            </a>
+            <h5 class="card-title">Gabriela C. Abacherli</h5>
+              <a href="editar_treino.php?aluno=Gabriela C. Abacherli" class="btn bg-white text-dark rounded-pill fw-bold px-4 py-2"> Ver treino </a>
           </div>
         </div>
       </div>
@@ -103,16 +134,11 @@
       <div class="col">
         <div class="card avaliacao-card text-center mx-auto">
           <div class="card-img-top d-flex justify-content-center mt-3">
-            <img src="img/matheus.png" alt="Avatar" class="border-avatar">
+            <img src="img/IconeBorda.png" alt="Avatar" class="border-avatar">
           </div>
           <div class="card-body">
-            <h5 class="card-title">MATHEUS VIEIRA</h5>
-            <a href="https://www.linkedin.com/in/matheus-vieira-b28b06258/" target="_blank" class="card-social mx-2" aria-label="LinkedIn">
-              <i class="bi bi-linkedin" style="font-size: 2.2rem;"></i>
-            </a>
-            <a href="https://github.com/matvieira7" target="_blank" class="card-social mx-2" aria-label="GitHub">
-              <i class="bi bi-github" style="font-size: 2.2rem;"></i>
-            </a>
+            <h5 class="card-title">João V. S. Donazan</h5>
+              <a href="editar_treino.php?aluno=João V. S. Donazan" class="btn bg-white text-dark rounded-pill fw-bold px-4 py-2"> Ver treino </a>
           </div>
         </div>
       </div>
@@ -120,16 +146,11 @@
       <div class="col">
         <div class="card avaliacao-card text-center mx-auto">
           <div class="card-img-top d-flex justify-content-center mt-3">
-            <img src="img/murillo.png" alt="Avatar" class="border-avatar">
+            <img src="img/IconeBorda.png" alt="Avatar" class="border-avatar">
           </div>
           <div class="card-body">
-            <h5 class="card-title">MURILLO SOUZA</h5>
-            <a href="https://www.linkedin.com/in/murillo-de-souza/" target="_blank" class="card-social mx-2" aria-label="LinkedIn">
-              <i class="bi bi-linkedin" style="font-size: 2.2rem;"></i>
-            </a>
-            <a href="https://github.com/murillomsouza" target="_blank" class="card-social mx-2" aria-label="GitHub">
-              <i class="bi bi-github" style="font-size: 2.2rem;"></i>
-            </a>
+            <h5 class="card-title">Gabriel Alves N.</h5>
+              <a href="editar_treino.php?aluno=Gabriel Alves N." class="btn bg-white text-dark rounded-pill fw-bold px-4 py-2"> Ver treino </a>
           </div>
         </div>
       </div>
@@ -137,28 +158,17 @@
        <div class="col">
         <div class="card avaliacao-card text-center mx-auto">
           <div class="card-img-top d-flex justify-content-center mt-3">
-            <img src="img/raul.png" alt="Avatar" class="border-avatar">
+            <img src="img/IconeBorda.png" alt="Avatar" class="border-avatar">
           </div>
           <div class="card-body">
-            <h5 class="card-title">RAUL CORRÊA</h5>
-            <a href="https://www.linkedin.com/in/raul-corrêa-2a264826a/?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app" target="_blank" class="card-social mx-2" aria-label="LinkedIn">
-              <i class="bi bi-linkedin" style="font-size: 2.2rem;"></i>
-            </a>
-            <a href="https://github.com/raul612" target="_blank" class="card-social mx-2" aria-label="GitHub">
-              <i class="bi bi-github" style="font-size: 2.2rem;"></i>
-            </a>
+            <h5 class="card-title">Aline G. de Lima</h5>
+              <a href="editar_treino.php?aluno=Aline G. de Lima" class="btn bg-white text-dark rounded-pill fw-bold px-4 py-2"> Ver treino </a>
           </div>
         </div>
       </div>
       
     </div>
   </div>
-    </section>
-    <!----------Terceira Seção---------->
-    <section class="secao3">
-      <h1>PRONTO PARA <span>EVOLUIR?</span></h1>
-      <p>Não perca mais tempo com treinos ineficientes. O StartFit combina tecnologia<br>de ponta com conhecimento científico para otimizar sua jornada fitness.</p>
-      <a href="login.php" id="homep" class="btn btn-iniciar">ACESSAR AGORA</a>
     </section>
     <!----------Footer---------->
     <footer class="footer-custom mt-0 pt-0 pb-0">
